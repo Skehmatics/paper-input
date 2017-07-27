@@ -221,6 +221,10 @@ This element is `display:block` by default, but you can set the `inline` attribu
         @apply(--paper-transition-easing);
       }
 
+      .input-content ::content label::after {
+        @apply(--paper-input-container-label-after);
+      }
+
       .input-content.label-is-floating ::content label,
       .input-content.label-is-floating ::content .paper-input-label {
         -webkit-transform: translateY(-75%) scale(0.75);
